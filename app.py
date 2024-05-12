@@ -1,8 +1,8 @@
 from flask import Flask
 from routes.auth import auth
 from routes.home import home
-from routes.specialties import specialties
-from routes.physiotherapists import especialistas
+# from routes.specialties import specialties
+# from routes.physiotherapists import especialistas
 
 app = Flask(__name__)
 
