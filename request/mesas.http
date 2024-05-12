@@ -1,0 +1,1 @@
+GET http://localhost:5000/api/v1/mesas/get?idUsuario=663fef62ef2beb1c7458ef02
