@@ -1,0 +1,2 @@
+#auth request
+http://localhost:5000/api/v1/user/login?usuario=kiraft&password=4321

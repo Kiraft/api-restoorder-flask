@@ -1,0 +1,1 @@
+GET http://localhost:9566/api/v1/list/specialties
