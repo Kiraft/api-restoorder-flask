@@ -1,11 +1,11 @@
 from flask import Blueprint, request
-import os
+from decouple import config
 from validators.validators import parsed_respond, has_error_msg, check_args
 from src.users.infrastructure.users_controller import UserController
 
 auth: Blueprint = Blueprint(name='auth', import_name= __name__)
 
-@auth.route('%s%s/%s' % (os.getevn('API_PATH'), os.getevn('API_VERSION'),  'user/login'), methods=["GET"])
+@auth.route('%s%s/%s' % (config('API_PATH'), config('API_VERSION'),  'user/login'), methods=["GET"])
 def validar_usuario():
 
     try:

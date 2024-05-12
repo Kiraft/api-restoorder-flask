@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-import os
+from decouple import config
 
 class ConnectionMongo:
 
@@ -7,6 +7,6 @@ class ConnectionMongo:
         #_ NAME DB
         db = "resto-order"
 
-        connection = MongoClient(os.getenv('MONGODB_URL'), uuidRepresentation='standard')
+        connection = MongoClient(config('MONGODB_URL'), uuidRepresentation='standard')
         self.con = connection[db]
 
